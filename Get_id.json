@@ -1,0 +1,52 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "b2d6f6ba-e9db-44c8-b022-a6fe523fb29c",
+        "name": "test_work"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": [
+                  {
+                    "enabled": true,
+                    "name": "id",
+                    "value": "2"
+                  }
+                ]
+              },
+              "scheme": {
+                "name": "http",
+                "version": "V11"
+              },
+              "host": "localhost:666",
+              "path": "/api/tovars"
+            },
+            "id": "eac00a55-88bd-426d-ab22-0b581243b384",
+            "name": "Get_id",
+            "headers": []
+          }
+        }
+      ]
+    }
+  ]
+}
